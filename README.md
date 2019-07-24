@@ -11,7 +11,7 @@ at the site level, name it site_archon_deployment_token in the RMM. Leaving the 
 
 If BOTH are specified the component will attempt installation with the token provided at runtime (at the script level).
 
-##Output
+## Output ##
 
 The component will error out if a deployment key isn't set or the installer is not present. Past that it should exit successfully, even if installation is NOT successful because MSI exit codes.
 
