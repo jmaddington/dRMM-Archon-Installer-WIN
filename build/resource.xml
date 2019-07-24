@@ -1,0 +1,20 @@
+<component info="CentraStage Component">
+  <general>
+    <name>Zorus Archon Agent Installer [WIN]</name>
+    <category>scripts</category>
+    <description>Installs Zorus Archon Agent. To use either set the site deployment token at script runtime or set it at the site level in Datto RMM.</description>
+    <uid>bb55a36a-6fe9-4e8f-90cf-164e3b3c00e0</uid>
+    <hash />
+    <version>4</version>
+    <timeout>3600</timeout>
+    <securityLevel>1</securityLevel>
+    <installType>powershell</installType>
+  </general>
+    <variable idx='0'>	    
+      <name>runtime_archon_deployment_token</name>	   
+      <type>string</type>
+      <direction>false</direction>
+      <description>Arcon Site Deployment token</description>
+      <defaultVal>0</defaultVal>
+      </variable>					
+</component>
