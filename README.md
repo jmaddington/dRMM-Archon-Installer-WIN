@@ -1,7 +1,9 @@
 # Overview #
+
 This repo is a Datto RMM Component to install the Zorus Archon agent.
 
 # Usage #
+
 Download aem-component.cpt from this repository and import it into your dRMM environment.
 
 Download the version of Zorus you want to deploy, name it ZorusInstaller and upload it to the imported component.
@@ -11,10 +13,12 @@ at the site level, name it site_archon_deployment_token in the RMM. Leaving the 
 
 If BOTH are specified the component will attempt installation with the token provided at runtime (at the script level).
 
+Datto documentation on site-level variables: [https://help.aem.autotask.net/en/Content/4WEBPORTAL/Sites/SiteSettings.htm](https://help.aem.autotask.net/en/Content/4WEBPORTAL/Sites/SiteSettings.htm)
+
 ## Output ##
 
 The component will error out if a deployment key isn't set or the installer is not present. Past that it should exit successfully, even if installation is NOT successful because MSI exit codes.
 
-# Building #
+## Building ##
 
 Download or fork, run repackage.bat and upload aem-component.cpt to dRMM. You can also download the aem-component.cpt straight from this repository and install in your dRMM instance.
